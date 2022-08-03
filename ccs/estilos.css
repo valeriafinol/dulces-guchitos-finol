@@ -250,6 +250,7 @@ a{
 .iconsSize{
     font-size: 25px;
     padding: 10px 5px;
+    animation: infinite;
 }
 
 /* INICIO */ 
@@ -322,14 +323,52 @@ a{
 
 .productosAndRecetasImages{
     width: 90%;
-    padding: 2%;
+    margin-bottom: 15%;
 }
 
 .recetaAndProductoContainer{
-    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.flipCard{
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    width: 30%;
+    height: 30%;
+}
+
+.flipCard img{
+    transition: all .5s ease;
+}
+  
+.flipCardImage{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+  
+.flipCardText{
+    color: black;
+    font-size: 1.4em;
+    z-index: 5;
+    opacity: 0;
+    transition: all .5s ease;
+    position: absolute;
+}
+  
+.flipCardImage:active img, .flipCardImage:hover img{
+    opacity: 0.6;
+    filter: blur(5px);
+    transform: scale(1.15);
+}
+
+.flipCardImage:active .flipCardText, .flipCardImage:hover .flipCardText{
+    opacity: 1;
+    transition: all 1.5s ease;
 }
 
 /* NOSOTROS */
