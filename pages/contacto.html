@@ -5,114 +5,237 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto | Dulces Guchitos</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="../ccs/estilos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <script src="https://kit.fontawesome.com/5a26ebec28.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div class="gridContainerContacto">
-            <header>
-                <img src="../images/logo.png" class="logoHeader animate__animated animate__pulse animate__slower" alt="Logo Dulces Guchitos">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./productos.html">Productos</a></li>
-                        <li><a href="./nosotros.html">Nosotros</a></li>
-                        <li><a href="./recetas.html">Recetas</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main class="gridContacto">
-                <h2 class="pinkHeading centered smallTitle1 bolderText animate__animated animate__headShake">CONTÁCTANOS</h2>
-                <section class="lightBlueBackground formAndImageContainer">
-                    <img src="../images/pan4.jpg" alt="Pan" class="formImage"> 
-                    <form action="">
-                        <div class="formContainer">
-                            <div class="formText labelAndInputContainer">
-                                <label for="nombre">Nombre</label>
-                                <input class="formInput" type="text" name="nombre" id="nombre" placeholder="John" required>
+        <header>
+            <nav class="navbar navbar-expand-lg"> 
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarToggler" 
+                        aria-controls="navbarToggler" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="../index.html" class="navbar-brand">
+                        <img src="../images/logo.png" 
+                            class="logoHeader animate__animated animate__pulse animate__slower" 
+                            alt="Logo Dulces Guchitos">
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../index.html">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="productos.html">
+                                    Productos
+                                </a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="./nosotros.html">
+                                    Nosotros
+                                </a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="./recetas.html">
+                                    Recetas
+                                </a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#">
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+            <main>
+                <div>
+                    <h2 class="pinkHeading centered smallTitle1 bolderText animate__animated animate__headShake">CONTÁCTANOS</h2>
+                </div>
+                <section class="lightBlueBackground">
+                    <div class="container py-5">
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <img src="../images/pan4.jpg" alt="Pan" class="img-fluid">
                             </div>
-                            <div class="formText labelAndInputContainer">
-                                <label for="apellido">Apellido</label>
-                                <input class="formInput" type="text" name="apellido" id="apellido" placeholder="Doe" required>
+                            <div class="col-md-6 col-12">
+                                <div>
+                                    <h3 class="pinkHeading centered smallTitle1 bolderText">Deja tu mensaje</h3>
+                                </div>
+                                <form>
+                                    <div class="row d-flex">
+                                        <div class="mb-3 col-md-6 col-12">
+                                            <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3 col-md-6 col-12">
+                                            <label for="exampleInputPassword1" class="form-label">Apellido</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="mb-3 col-md-6 col-12">
+                                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3 col-md-6 col-12">
+                                            <label for="exampleInputPassword1" class="form-label">Teléfono</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="col-12">
+                                            <label for="mensaje">Mensaje</label>
+                                            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deja tu mensaje, comentarios o sugerencias" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <button type="submit" class="btn mt-3 px-5 styleButton formButton">Enviar</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <div class="formContainer">
-                            <div class="formText labelAndInputContainer">
-                                <label for="email">Email</label>
-                                <input class="formInput" type="email" name="email" id="email" placeholder="ejemplo@gmail.com">
-                            </div>
-                            <div class="formText labelAndInputContainer">
-                                <label for="telefono">Teléfono</label>
-                                <input class="formInput" type="text" name="telefono" id="telefono" placeholder="+54 X XX XXXX-XXXX">
-                            </div>
-                        </div>
-                        <div class="labelAndInputContainer">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deja tu mensaje, comentarios o sugerencias" class="textareaStyle"></textarea>
-                        </div>
-                        <input type="submit" value="Enviar" class="styleButton formButton">
-                    </form>
+                    </div>
                 </section>
                 <section>
-                    <h2 class="bolderText centered pinkHeading smallTitle1">ENCUÉNTRANOS</h2>
-                    <div class="infoContactoContainer">
-                        <div>
-                            <h3 class="bolderText centered pinkHeading smallTitle1">Información de contacto</h3>
-                            <div class="iconsContacto">
-                                <i class="fa-solid fa-phone infoDeContactoText"></i>
-                                <h4 class="infoDeContactoText">+54 9 11 1234-5678</h4>
+                    <div class="container">
+                        <div class="py-2">
+                            <div class="row">
+                                <h2 class="bolderText centered pinkHeading smallTitle1">ENCUÉNTRANOS</h2>
                             </div>
-                            <div class="iconsContacto">
-                                <i class="fa-solid fa-envelope infoDeContactoText"></i>
-                                <h4 class="infoDeContactoText">dulcesguchitos@gmail.com</h4>
-                            </div>
-                            <div class="iconsContacto">
-                                <i class="fa-solid fa-location-dot infoDeContactoText"></i>
-                                <h4 class="infoDeContactoText infoDeContactoText">Calle 72, Zulia, Venezuela</h4>
-                            </div>
-                            <div class="flexColumnContainer">
-                                <h4 class="bolderText redesText">Redes sociales</h4>
-                                <div>
-                                    <i class="fa-brands fa-whatsapp iconsSize"></i>
-                                    <i class="fa-brands fa-instagram iconsSize"></i>
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div>
+                                        <h3 class="bolderText centered pinkHeading smallTitle1 d-none d-lg-block d-xl-block">Información de contacto</h3>
+                                        <h5 class="bolderText centered pinkHeading d-block d-lg-none">Información de contacto</h3>
+                                        <div class="iconsContacto d-flex">
+                                            <i class="fa-solid fa-phone infoDeContactoText"></i>
+                                            <h4 class="infoDeContactoText">+54 9 11 1234-5678</h4>
+                                        </div>
+                                        <div class="iconsContacto d-flex">
+                                            <i class="fa-solid fa-envelope infoDeContactoText"></i>
+                                            <h4 class="infoDeContactoText">dulcesguchitos@gmail.com</h4>
+                                        </div>
+                                        <div class="iconsContacto d-flex">
+                                            <i class="fa-solid fa-location-dot infoDeContactoText"></i>
+                                            <h4 class="infoDeContactoText infoDeContactoText">Calle 72, Zulia, Venezuela</h4>
+                                        </div>
+                                        <div>
+                                            <h4 class="bolderText redesText centered">Redes sociales</h4>
+                                            <div class="d-flex justify-content-center">
+                                                <i class="fa-brands fa-whatsapp iconsSize"></i>
+                                                <i class="fa-brands fa-instagram iconsSize"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12 mb-4">
+                                    <iframe class="mapSize" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.8412789666327!2d-71.6158267!3d10.6694253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8998e755a6f4e1%3A0xc39fcd48eb5da18b!2sCalle%2072%2C%20Maracaibo%204002%2C%20Zulia%2C%20Venezuela!5e0!3m2!1sen!2sar!4v1658177928647!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
-                        </div>
-                        <div>
-                            <iframe class="mapSize" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.8412789666327!2d-71.6158267!3d10.6694253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8998e755a6f4e1%3A0xc39fcd48eb5da18b!2sCalle%2072%2C%20Maracaibo%204002%2C%20Zulia%2C%20Venezuela!5e0!3m2!1sen!2sar!4v1658177928647!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </section>
             </main>
             <footer>
-                <div class="itemsFooter">
-                    <img src="../images/logo.png" alt="Logo Dulces Guchitos" class="logoFooter">
-                </div>
-                <div class="itemsFooter">
-                    <h4 class="lighBlueText bolderText centered">Horarios</h4>
-                    <p class="lighBlueText centered">Lunes a Viernes: <br> 9:00am-6pm</p>
-                </div>
-                <div class="itemsFooter">
-                    <h4 class="lighBlueText bolderText centered">Dirección</h4>
-                    <p class="lighBlueText centered">Av. 14A, Calle 69A-70. <br> Maracaibo, Venezuela</p>
-                </div>
-                <div class="itemsFooter">
-                    <h4 class="lighBlueText bolderText centered">Suscríbete al Newsletter</h4>
-                    <input type="email" name="newsletter" id="newsletter" placeholder="ejemplo@gmail.com">
-                    <button class="styleButton footerButton whiteText">Suscríbete</button>
-                </div>
-                <div class="itemsFooter footerIcons">
-                    <div>
-                        <h4 class="lighBlueText bolderText">Nuestras redes</h4>
+                <div class="py-1">
+                    <div class="container-fluid pt-5 pb-4">
+                        <div class="row">
+                            <div class="col-md-2 col-12 d-md-block d-flex justify-content-center">
+                                <img src="../images/logo.png" alt="Logo Dulces Guchitos" class="logoFooter img-fluid">
+                            </div>
+                            <div class="col-md-2">
+                                <div>
+                                    <h6 class="lighBlueText bolderText mb-0 ">
+                                        Horarios
+                                    </h6>
+                                </div>
+                                <div>
+                                    <p class="lighBlueText">
+                                        Lunes a Viernes: <br> 9:00am-6pm
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div>
+                                    <h6 class="lighBlueText bolderText mb-0 ">
+                                        Dirección
+                                    </h6>
+                                </div>
+                                <div>
+                                    <p class="lighBlueText">
+                                        Av. 14A, Calle 69A-70. 
+                                        Maracaibo, Venezuela
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Nuestras Redes solo para mobile -->
+                            <div class="col-md-2 d-block d-md-none mb-1">
+                                <h6 class="lighBlueText bolderText mb-0">
+                                    Nuestras Redes
+                                </h6>
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone=541112345678&text=Hola,%20quiero%20un%20Guchito!" 
+                                        target="_blank">    
+                                        <i class="fa-brands fa-whatsapp whiteText iconsSize animate__animated animate__pulse"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/dulcesguchitos" target="_blank">
+                                        <i class="fa-brands fa-instagram whiteText iconsSize animate__animated animate__pulse"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <form>
+                                    <h6 class="lighBlueText bolderText mb-1">
+                                        Suscríbete al Newsletter
+                                    </h6>
+                                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                        <label for="newsletter" class="visually-hidden">Email address</label>
+                                        <input id="newsletter" type="text" class="form-control" placeholder="ejemplo@gmail.com">
+                                        <button class="btn styleButton whiteText" type="button">Suscríbete</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Nuestras Redes solo para desktop -->
+                            <div class="col-md-2 d-none d-md-block">
+                                <h6 class="lighBlueText bolderText mb-0">
+                                    Nuestras Redes
+                                </h6>
+                                <div>
+                                    <a href="https://api.whatsapp.com/send?phone=541112345678&text=Hola,%20quiero%20un%20Guchito!" 
+                                        target="_blank">    
+                                        <i class="fa-brands fa-whatsapp whiteText iconsSize animate__animated animate__pulse"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/dulcesguchitos" target="_blank">
+                                        <i class="fa-brands fa-instagram whiteText iconsSize animate__animated animate__pulse"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <i class="fa-brands fa-whatsapp whiteText iconsSize animate__animated animate__pulse"></i>
-                        <i class="fa-brands fa-instagram whiteText iconsSize animate__animated animate__pulse"></i>
-                    </div>
+                    <p class="text-center text-muted copy">&copy; Valeria Finol - 2022</p>
                 </div>
             </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+                integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+                crossorigin="anonymous">
+            </script>
         </div>
     </body>
 </html>
