@@ -10,95 +10,21 @@
     color: black;
 }
 
-/* Layout */
-.gridContainer{
-    display: grid;
-    grid-template-areas: 
-                        "header"
-                        "mainInicio"
-                        "footer";
-    grid-template-rows: auto 120% 8%;
-}
-
-header{
-    grid-area: header;
-    display: flex;
-}
-
-.gridMainInicio{
-    grid-area: mainInicio;
-    display: grid;
-    grid-template-areas: 
-                        "nombre"
-                        "nuestrosProductos"
-                        "productos"
-                        "nosotros"
-                        "recetas"
-                        "contacto";
-    grid-template-rows: 20% 1% auto auto 20% auto;
-}
-
-.nombre{
-    grid-area: nombre;
-}
-
-.nuestrosProductos{
-    grid-area: nuestrosProductos;
-}
-
-.productos{
-    grid-area: productos;
-}
-
-.nosotros{
-    grid-area: nosotros;
-}
-
-.recetas{
-    grid-area: recetas;
-}
-
-.contacto{
-    grid-area: contacto;
-}
-
-footer{
-    grid-area: footer;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #3a3b3c;
-}
-
 /* Header y Nav */
 .logoHeader{
-    max-width: 15%;
-    margin: 1%;
     animation-duration: 20s;
+    width:150px;
 }
-
-nav{
-    display: flex;
-    width: 100%;
-    margin-left: -27%;
-    justify-content: center; 
-    align-items: center;
-}
-
-ul, .inicioImageAndText{
-    display: flex;
-}
-
-li{
-    list-style-type: none;
-    margin: 0 8%;
+.navbar-nav{
+    transform: translateX(-15%);
 }
 
 li{
     display: inline-block;
     text-decoration: none;
+    list-style-type: none;
     position: relative;
-}
+} 
 
 li::after{
     content:'';
@@ -116,7 +42,7 @@ li::after{
 
 li:hover::after{
     transform: scaleX(1.01);
-}
+} 
 
 a{
     text-decoration: none;
@@ -124,10 +50,11 @@ a{
 
 /* Footer */
 .logoFooter{
-    max-width: 150px;
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 2%;
+    width: 150px;
+}
+
+footer{
+    background-color: #3a3b3c; 
 }
 
 /* Texto y Títulos */
@@ -176,9 +103,7 @@ a{
 
 /* Card */
 .cardStyle{
-    border: solid 1px black;
     filter: drop-shadow(5px 5px 5px #cecece);
-    background-color: white;
 }
 
 /* Background color */
@@ -190,7 +115,6 @@ a{
 .beigeBackground{
     background-color: #FBF8F1;
 }
-
 
 .lightBlueBackground{
     background-color: #EAF6F6;
@@ -216,17 +140,17 @@ a{
     transform: translate(-50%,-50%);
     z-index: -1;
     transition: all 0.6s ease;
-  }
-  
+}
+
 .styleButton::before{
     width: 0%;
     height: 100%;
 }
-  
+
 .styleButton:hover::before{
     width: 100%;
 }
-  
+
 .cardButton{
     padding: 2% 10%;
     margin: 4% 0;
@@ -241,12 +165,6 @@ a{
     padding: 1% 2%; 
 }
 
-.footerButton{
-    width: 100px; 
-    padding: 5px 5px;
-    margin: 0 10px;
-}
-
 .iconsSize{
     font-size: 25px;
     padding: 10px 5px;
@@ -254,103 +172,39 @@ a{
 }
 
 /* INICIO */ 
-.titleAndBackground{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.cardInicioContainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 2%;
-}
-
-.cardImages{
-    width: 90%;
-    margin: 5% 20%;
-}
-
-.cardInicio{
-    width: 26%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3%;
-}
-
-.inicioImages{
-    width: 50%;
-    padding: 4%;
-}
-
-.headingAndParagraph, .footerIcons{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .inicioRecetas{
     background-image: url(../images/croissant.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+
+.mapSize{
+    width: 110%;
 }
 
 /* PRODUCTOS Y RECETAS */
-.gridContainerRecetasAndProductos{
-    display: grid;
-    grid-template-areas: 
-                        "header"
-                        "recetasAndProductos"
-                        "footer";
-    grid-template-rows: auto auto 12%;
-}
-
-.gridRecetasAndProductos{
-    grid-area: recetasAndProductos;
-}
-
-.sectionRecetasAndProductos{
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-evenly; 
-}
-
 .productosAndRecetasImages{
     width: 90%;
     margin-bottom: 15%;
 }
 
-.recetaAndProductoContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .flipCard{
     display: inline-block;
-    text-align: center;
+    text-align: center; 
     overflow: hidden;
-    width: 30%;
-    height: 30%;
 }
 
 .flipCard img{
     transition: all .5s ease;
 }
-  
+
 .flipCardImage{
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
 }
-  
+
 .flipCardText{
     color: black;
     font-size: 1.4em;
@@ -359,7 +213,7 @@ a{
     transition: all .5s ease;
     position: absolute;
 }
-  
+
 .flipCardImage:active img, .flipCardImage:hover img{
     opacity: 0.6;
     filter: blur(5px);
@@ -372,43 +226,10 @@ a{
 }
 
 /* NOSOTROS */
-.gridContainerNosotros{
-    display: grid;
-    grid-template-areas: 
-                        "header"
-                        "gridNosotros"
-                        "footer";
-    grid-template-rows: auto auto 12%;
-}
-
-.gridNosotros{
-    grid-area: gridNosotros;
-}
-
-.nosotrosImages{
-    width: 35%;
-    padding: 2%;
-}
-
-.nosotrosSection1Container{
-    display: flex;
-    align-items: center;
-}
-
-.nosotrosImages2{
-    width: 50%;
-}
-
-.nosotrosImages3{
-    width: 100%;
-}
-
-.cardNosotros{
-    padding: 20px 28px;
-    max-width: 358px;
-    margin-right: 2%;
-    margin-left: 2%;
-    margin-bottom: 4%;
+.carousel-inner .carousel-item {
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease, -webkit-transform .6s ease;
 }
 
 .headingCardNosotros{
@@ -416,157 +237,45 @@ a{
     margin-bottom: 2%;
 } 
 
-.equipoContainer{
-    display: flex;
-    justify-content: space-evenly;
-}
-
 /* CONTACTO */
-.gridContainerContacto{
-    display: grid;
-    grid-template-areas: 
-                        "header"
-                        "gridContacto"
-                        "footer";
-    grid-template-rows: auto auto 12%;
-}
-
-.gridContacto{
-    grid-area: gridContacto;
-}
-
-.formImage{
-    width: 50%;
-    padding: 5%;
-}
-
-.formAndImageContainer{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.labelAndInputContainer{
-    display: flex;
-    flex-direction: column;
-}
-
-.formContainer, .iconsContacto, .nosotrosImagesSection2{
-    display: flex;
-}
-
-.formInput, .textareaStyle{    
-    line-height: 35px;
-    border-radius: 10px;
-    padding: 0 5px;
-    width: 198px; 
-    border: solid 1px #cecece;
-}
-
-.formText{
-    margin-right: 21.5%;
-    margin-bottom: 4%;
-}
-
-.textareaStyle{
-    width: 500px;
-    height: 220px;
-    padding: 10px;
-    resize: none;
-}
-
 .formButton{
     margin: 4% 33%;
     padding: 2% 15%;
-}
-
-.infoContactoContainer{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 3%;
 }
 
 .infoDeContactoText{
     padding-left: 5%;
     padding-bottom: 2%;
     padding-top: 2%;
+    font-size: 18px;
 }
 
-.flexColumnContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .redesText{
-    padding: 5% 0;
-    size: 20px;
+    padding-top: 5%;
+}
+
+.copy{
+    border-top: black dotted 1px;
+    padding-top: 1%;
+    margin-bottom: 0;
 }
 
 /* RESPONSIVE */
 
 /* Mobile */
 @media screen and (min-width: 320px) and (max-width: 480px){
-    /* Layout */
-    .gridContainer, .gridMainInicio, .gridRecetasAndProductos,.gridContainerRecetasAndProductos, .gridContainerNosotros, .gridContainerContacto{
-        grid-template-rows: auto;
-    }
-
     .logoHeader{
         max-width: 50%;
         margin: 3% 0;
     }
 
-    nav{
-        margin: 0;
+    .navbar-nav{
+        transform: translateX(0%);
     }
-
-    header, footer, ul, .inicioImageAndText, .cardInicioContainer, .cardInicio, .nosotrosSection1Container, .nosotrosImagesSection2, .formAndImageContainer, .infoContactoContainer, .equipoContainer{
+    
+    header, ul{
         flex-direction: column;
         align-items: center;
-    }
-
-    li{
-        margin: 10% 0;
-    }
-
-    a, .h3Inicio{
-        font-size: 20px;
-    }
-
-    .itemsFooter{
-        margin: 5% 0;
-    }
-
-    /* Content */
-    .titleAndBackground{
-        padding: 4% 0;
-    }
-
-    .cardInicioContainer{
-        margin: 4%;
-    }
-    
-    .cardImages{
-        width: 85%;
-        margin: 5% 20%;
-    }
-    
-    .cardInicio{
-        width: 90%;
-    }
-
-    .h3Inicio{
-        padding: 2% 0;
-    }
-
-    .cardButton{
-        padding: 2% 10%;
-        margin: 4% 0;
-    }
-
-    .buttonTextSize{
-        font-size: 15px;
     }
 
     .smallTitle1{
@@ -579,131 +288,31 @@ a{
         text-align: center;
     }
 
-    .inicioImages, .nosotrosImages, .nosotrosImages2, .recetaAndProductoContainer{
-        width: 100%;
-        padding: 0;
-    }
-
-    .paragrahAndButton,.paragrahAndButton2{
-        padding: 2% 4%;
-        margin: 4% 0;
-    }
-
     /* PRODUCTOS Y RECETAS */
-    .productosAndRecetasImages{
-        width: 84%;
-        padding: 0;
-    }
-
-    .pProductosAndRecetas, .pNosotros{
-        margin: 4%;
-    }
-
     .smallTitle2{
         margin-top: 8%;
     }
 
-    .nameHeading{
-        text-align: center;
-        font-size: 18px;
-        margin-bottom: 10%;
-    }
-
     /* NOSOTROS */
-    .cardNosotros{
-        width: 80%;
-        padding: 5%;
-        margin: 5% 0;
-    }
-
-    .nosotrosImages3, .mapSize, .formImage{
-        width: 100%;
+    .pNosotros{
+        margin: 4% 2%;
     }
 
     /* CONTACTO */
-    .textareaStyle{
-        width: 250px;
-    }
-
-    .formInput{
-        width: 242px;
-    }
-
-    .formContainer{
-        flex-direction: column;
+    .mapSize, .formImage{
+        width: 100%;
     }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px){
-    /* INICIO */
-
-    /* Layout */
-    .gridContainer{
-        grid-template-rows: auto 95% auto;
+    .navbar-nav{
+        transform: translateX(0%);
     }
 
-    .gridMainInicio{
-        grid-template-rows: 15% 1% auto auto 15% auto;
-    }
-
-    /* Content */
-    .logoHeader{
-        max-width: 25%;
-        margin: 3% 0;
-    }
-
-    nav{
-        margin: 0;
-    }
-
-    header, footer, ul, .inicioImageAndText, .cardInicio{
+    header, ul{
         flex-direction: column;
         align-items: center;
-    }
-
-    li{
-        margin: 10% 0;
-    }
-
-    a, .h3Inicio{
-        font-size: 20px;
-    }
-
-    /* Main */
-    .cardInicioContainer{
-        margin: 4%;
-    }
-    
-    .cardImages{
-        width: 86%;
-    }
-    
-    .cardInicio{
-        width: 44%;
-    }
-
-    .inicioImages{
-        width: 100%;
-        padding: 0;
-    }
-
-    .paragrahAndButton{
-        padding: 1% 2%;
-        margin: 4% 0;
-    }
-
-    /* PRODUCTOS Y RECETAS */
-
-    /* Layout */
-    .gridContainerRecetasAndProductos, .gridContainerNosotros, .gridContainerContacto{
-        grid-template-rows: auto;
-    }
-    
-    /* Content */
-    .productosAndRecetasImages{
-        width: 84%;
-        padding: 0;
     }
 
     .pProductosAndRecetas{
@@ -714,50 +323,9 @@ a{
     .smallTitle2{
         margin-top: 5%;
     }
-
-    .nameHeading{
-        text-align: center;
-        font-size: 18px;
-        margin-bottom: 10%;
-    }
-
-    .recetaAndProductoContainer{
-        width: 45%;
-        display: flex;
-    }
     
-    .itemsFooter{
-        margin: 2% 0;
-    }
-
-    /* NOSOTROS */
-    .equipoContainer{
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .cardNosotros{
-        width: 300px;
-    }
-
     /* CONTACTO */
-    .textareaStyle{
-        width: 250px;
-        height: 100px;
-    }
-
-    .formInput{
-        width: 242px;
-    }
-
-    .formContainer{
-        flex-direction: column;
-    }
     .mapSize{
         width: 100%;
-    }
-    
-    .formAndImageContainer{
-        justify-content: center;
     }
 }
