@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -14,13 +14,21 @@
     font-size: $text-big;
 }
 
-.pinkText {
-    text-align: $text-centered;
-    color: $color-pink;
-    font-weight: $text-bolder;
-}
-
 .smallText {
     font-size: $text-small;
     padding: $text-small-padding;
+}
+
+.pinkText {
+    color: $color-pink;
+
+}
+
+.whiteText {
+    color: $color-white;
+}
+
+.textSytle {
+    font-weight: $text-bolder;
+    text-align: $text-centered;
 }

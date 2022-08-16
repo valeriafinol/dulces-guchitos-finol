@@ -11,14 +11,19 @@
 .bigText {
   font-size: 80px; }
 
-.pinkText {
-  text-align: center;
-  color: #ff7fb1;
-  font-weight: bolder; }
-
 .smallText {
   font-size: 30px;
   padding: 2% 0; }
+
+.pinkText {
+  color: #ff7fb1; }
+
+.whiteText {
+  color: white; }
+
+.textSytle {
+  font-weight: bolder;
+  text-align: center; }
 
 .header {
   background-color: white; }
@@ -86,15 +91,73 @@
 .nosotros {
   background-color: #FBF8F1; }
 
-p {
+.pSections {
   text-align: center; }
 
 .paragrahAndButton {
   margin: 2% 0;
   padding: 2% 4%; }
 
-.contacto {
-  background-color: #EAF6F6; }
+.recetas {
+  background-image: url(../images/croissant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .recetas .paragrahAndButton2 {
+    padding: 1% 2%; }
 
 .paragrahAndButton2 {
   padding: 1% 2%; }
+
+.contacto {
+  background-color: #EAF6F6; }
+
+.footer {
+  background-color: #3a3b3c; }
+  .footer .logoFooter {
+    width: 150px; }
+  .footer .pFooter, .footer .h6Footer {
+    color: #EAF6F6; }
+  .footer .h6Footer {
+    font-weight: bolder; }
+  .footer .icons {
+    color: white;
+    font-size: 25px;
+    padding: 10px 5px;
+    animation: infinite; }
+  .footer .copy {
+    border-top: black dotted 1px;
+    padding-top: 1%;
+    margin-bottom: 0; }
+
+/* Mobile */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center; }
+    header .navbar a {
+      text-decoration: none; }
+      header .navbar a .logoHeader {
+        max-width: 50%;
+        margin: 3% 0; }
+    header .navbar .navbar-nav {
+      transform: translateX(0%); }
+    header ul {
+      flex-direction: column;
+      align-items: center; }
+  .smallText {
+    font-size: 25px;
+    padding: 2% 0; }
+  .bigText {
+    font-size: 50px;
+    text-align: center; } }
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    flex-direction: column;
+    align-items: center; }
+    header .navbar .navbar-nav {
+      transform: translateX(0%); }
+    header ul {
+      flex-direction: column;
+      align-items: center; } }

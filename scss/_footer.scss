@@ -1,3 +1,29 @@
-.footer{
-    
+.footer {
+    background-color: #3a3b3c;
+
+    .logoFooter {
+        width: 150px;
+    }
+
+    .pFooter, .h6Footer {
+        color: $color-lightblue;
+    }
+
+    .h6Footer{
+        font-weight: $text-bolder;
+    }
+
+    .icons {
+        color: $color-white;
+        font-size: 25px;
+        padding: 10px 5px;
+        animation: infinite;
+    }
+
+    .copy {
+        border-top: black dotted 1px;
+        padding-top: 1%;
+        margin-bottom: 0;
+    }
 }
+

@@ -48,7 +48,7 @@
     background-color: $color-beige;   
 }
 
-p {
+.pSections {
     text-align: $text-centered;
 }
 
@@ -57,10 +57,20 @@ p {
     padding: 2% 4%; 
 }
 
-.contacto{
-    background-color: $color-lightblue; 
+.recetas {
+    background-image: url(../images/croissant.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .paragrahAndButton2 {
+        padding: 1% 2%; 
+    }
 }
 
 .paragrahAndButton2{
     padding: 1% 2%; 
+}
+
+.contacto{
+    background-color: $color-lightblue; 
 }
