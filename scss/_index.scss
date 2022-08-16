@@ -1,0 +1,54 @@
+// Main
+.nombreBackground {
+    opacity: 0.7;
+    background-image: radial-gradient(#ff7fb1 0.5px, #EAF6F6 0.5px);
+}
+
+.cardStyle {
+    filter: drop-shadow(5px 5px 5px #cecece);
+
+    .cardText {
+        text-align: $text-centered;
+    }
+
+    .cardButton {
+        padding: 2% 10%;
+        margin: 4% 0;
+    }
+}
+
+.styleButton {
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid #ff7fb1;
+    background-color: transparent;
+    position: relative;
+    z-index: 5;
+    transition: 1s all ease;
+
+    &::before {
+        background: #ff7fb1;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        transition: all 0.6s ease;
+        width: 0%;
+        height: 100%;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}
+
+.paragrahAndButton{
+    margin: 2% 0;
+    padding: 2% 4%; 
+}
+
+.paragrahAndButton2{
+    padding: 1% 2%; 
+}

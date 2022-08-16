@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  box-sizing: border-box;
+  color: black; }
+
+.bigText {
+  font-size: 80px; }
+
+.pinkText {
+  text-align: center;
+  color: #ff7fb1;
+  font-weight: bolder; }
+
+.smallText {
+  font-size: 30px; }
+
+.header {
+  background-color: white; }
+  .header .navbar a {
+    text-decoration: none; }
+    .header .navbar a .logoHeader {
+      animation-duration: 20s;
+      width: 150px; }
+  .header .navbar .navbar-nav {
+    transform: translateX(-15%); }
+  .header .navbar li {
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    position: relative; }
+    .header .navbar li::after {
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: #ff7fb1;
+      border-radius: 4px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: 0.25s ease; }
+    .header .navbar li:hover::after {
+      transform: scaleX(1.01); }
+
+.nombreBackground {
+  opacity: 0.7;
+  background-image: radial-gradient(#ff7fb1 0.5px, #EAF6F6 0.5px); }
+
+.cardStyle {
+  filter: drop-shadow(5px 5px 5px #cecece); }
+  .cardStyle .cardText {
+    text-align: center; }
+  .cardStyle .cardButton {
+    padding: 2% 10%;
+    margin: 4% 0; }
+
+.styleButton {
+  text-decoration: none;
+  border-radius: 8px;
+  border: 2px solid #ff7fb1;
+  background-color: transparent;
+  position: relative;
+  z-index: 5;
+  transition: 1s all ease; }
+  .styleButton::before {
+    background: #ff7fb1;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+    width: 0%;
+    height: 100%; }
+  .styleButton:hover::before {
+    width: 100%; }
+
+.paragrahAndButton {
+  margin: 2% 0;
+  padding: 2% 4%; }
+
+.paragrahAndButton2 {
+  padding: 1% 2%; }

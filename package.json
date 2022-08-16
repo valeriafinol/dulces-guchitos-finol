@@ -1,0 +1,25 @@
+{
+  "name": "dulcesguchitos",
+  "version": "1.0.0",
+  "description": "proyecto relacionado a tienda de pasteleria y panaderia dulces guchitos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valeriafinol/dulces-guchitos-finol.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valeriafinol/dulces-guchitos-finol/issues"
+  },
+  "homepage": "https://github.com/valeriafinol/dulces-guchitos-finol#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

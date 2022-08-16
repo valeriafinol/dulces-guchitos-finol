@@ -11,22 +11,27 @@
 }
 
 /* Header y Nav */
+.header{
+    background-color: #EAF6F6;
+}
+
 .logoHeader{
     animation-duration: 20s;
     width:150px;
 }
+
 .navbar-nav{
     transform: translateX(-15%);
 }
 
-li{
+.li{
     display: inline-block;
     text-decoration: none;
     list-style-type: none;
     position: relative;
 } 
 
-li::after{
+.li::after{
     content:'';
     width: 100%;
     height: 1px;
@@ -40,11 +45,11 @@ li::after{
     transition: 0.25s ease;
 }
 
-li:hover::after{
+.li:hover::after{
     transform: scaleX(1.01);
 } 
 
-a{
+.a{
     text-decoration: none;
 } 
 
@@ -107,7 +112,7 @@ footer{
 }
 
 /* Background color */
-.blueAndDotsBackground{
+.nombreBackground{
     opacity: 0.7;
     background-image: radial-gradient(#ff7fb1 0.5px, #EAF6F6 0.5px);
 } 
