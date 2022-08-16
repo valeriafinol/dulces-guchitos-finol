@@ -17,7 +17,8 @@
   font-weight: bolder; }
 
 .smallText {
-  font-size: 30px; }
+  font-size: 30px;
+  padding: 2% 0; }
 
 .header {
   background-color: white; }
@@ -82,9 +83,18 @@
   .styleButton:hover::before {
     width: 100%; }
 
+.nosotros {
+  background-color: #FBF8F1; }
+
+p {
+  text-align: center; }
+
 .paragrahAndButton {
   margin: 2% 0;
   padding: 2% 4%; }
+
+.contacto {
+  background-color: #EAF6F6; }
 
 .paragrahAndButton2 {
   padding: 1% 2%; }

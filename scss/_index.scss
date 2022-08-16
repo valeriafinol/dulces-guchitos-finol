@@ -27,7 +27,7 @@
     transition: 1s all ease;
 
     &::before {
-        background: #ff7fb1;
+        background: $color-pink;
         content: "";
         position: absolute;
         top: 50%;
@@ -44,9 +44,21 @@
     }
 }
 
+.nosotros {
+    background-color: $color-beige;   
+}
+
+p {
+    text-align: $text-centered;
+}
+
 .paragrahAndButton{
     margin: 2% 0;
     padding: 2% 4%; 
+}
+
+.contacto{
+    background-color: $color-lightblue; 
 }
 
 .paragrahAndButton2{
