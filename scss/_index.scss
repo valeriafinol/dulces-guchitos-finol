@@ -1,7 +1,7 @@
 // Main
 .nombreBackground {
     opacity: 0.7;
-    background-image: radial-gradient(#ff7fb1 0.5px, #EAF6F6 0.5px);
+    background-image: radial-gradient($color-pink 0.5px, $color-lightblue 0.5px);
 }
 
 .cardStyle {
@@ -20,7 +20,7 @@
 .styleButton {
     text-decoration: none;
     border-radius: 8px;
-    border: 2px solid #ff7fb1;
+    border: 2px solid $color-pink;
     background-color: transparent;
     position: relative;
     z-index: 5;
@@ -45,16 +45,16 @@
 }
 
 .nosotros {
-    background-color: $color-beige;   
+    background-color: $color-beige;
 }
 
 .pSections {
     text-align: $text-centered;
 }
 
-.paragrahAndButton{
+.paragrahAndButton {
     margin: 2% 0;
-    padding: 2% 4%; 
+    padding: 2% 4%;
 }
 
 .recetas {
@@ -63,14 +63,14 @@
     background-size: cover;
 
     .paragrahAndButton2 {
-        padding: 1% 2%; 
+        padding: 1% 2%;
     }
 }
 
-.paragrahAndButton2{
-    padding: 1% 2%; 
+.paragrahAndButton2 {
+    padding: 1% 2%;
 }
 
-.contacto{
-    background-color: $color-lightblue; 
+.contacto {
+    background-color: $color-lightblue;
 }

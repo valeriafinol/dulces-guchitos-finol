@@ -5,27 +5,17 @@
         align-items: center;
 
         .navbar {
-
-            a {
-                text-decoration: none;
-
-                .logoHeader {
-                    max-width: 50%;
-                    margin: 3% 0;
-                }
+            .logoHeader {
+                max-width: 50%;
+                margin: 3% 0;
             }
 
             .navbar-nav {
-                transform: translateX(0%);
+                transform: translateX(0%) !important;
+                flex-direction: column;
+                align-items: center;
             }
-
         }
-
-        ul {
-            flex-direction: column;
-            align-items: center;
-        }
-
     }
 
     .smallText {
@@ -40,7 +30,7 @@
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -48,7 +38,7 @@
         .navbar {
 
             .navbar-nav {
-                transform: translateX(0%);
+                transform: translateX(0%) !important;
             }
 
         }

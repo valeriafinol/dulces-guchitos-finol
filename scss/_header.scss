@@ -2,17 +2,11 @@
     background-color: $color-white;
 
     .navbar {
-        
-        a {
-            text-decoration: none;
-
-            .logoHeader {
-                animation-duration: 20s;
-                width: 150px;
-            }
+        .logoHeader {
+            width: 150px;
         }
 
-        .navbar-nav{
+        .navbar-nav {
             transform: translateX(-15%);
         }
 

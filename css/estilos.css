@@ -8,6 +8,9 @@
   box-sizing: border-box;
   color: black; }
 
+a {
+  text-decoration: none; }
+
 .bigText {
   font-size: 80px; }
 
@@ -27,11 +30,8 @@
 
 .header {
   background-color: white; }
-  .header .navbar a {
-    text-decoration: none; }
-    .header .navbar a .logoHeader {
-      animation-duration: 20s;
-      width: 150px; }
+  .header .navbar .logoHeader {
+    width: 150px; }
   .header .navbar .navbar-nav {
     transform: translateX(-15%); }
   .header .navbar li {
@@ -122,8 +122,7 @@
   .footer .icons {
     color: white;
     font-size: 25px;
-    padding: 10px 5px;
-    animation: infinite; }
+    padding: 10px 5px; }
   .footer .copy {
     border-top: black dotted 1px;
     padding-top: 1%;
@@ -134,14 +133,11 @@
   header {
     flex-direction: column;
     align-items: center; }
-    header .navbar a {
-      text-decoration: none; }
-      header .navbar a .logoHeader {
-        max-width: 50%;
-        margin: 3% 0; }
+    header .navbar .logoHeader {
+      max-width: 50%;
+      margin: 3% 0; }
     header .navbar .navbar-nav {
-      transform: translateX(0%); }
-    header ul {
+      transform: translateX(0%) !important;
       flex-direction: column;
       align-items: center; }
   .smallText {
@@ -157,7 +153,7 @@
     flex-direction: column;
     align-items: center; }
     header .navbar .navbar-nav {
-      transform: translateX(0%); }
+      transform: translateX(0%) !important; }
     header ul {
       flex-direction: column;
       align-items: center; } }
