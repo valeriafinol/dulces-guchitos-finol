@@ -1,11 +1,10 @@
-@import './variables'; 
-@import './estilosGenerales'; 
-@import './header'; 
-@import './index'; 
-@import './footer'; 
-@import './mediaqueries';
-
-
-
-
-
+@import './utilities/variables'; 
+@import './base/fonts'; 
+@import './base/reset';
+@import './utilities/maps';
+@import './utilities/mixin';
+@import './base/estilosGenerales';
+@import './layouts/header'; 
+@import './pages/index'; 
+@import './layouts/footer'; 
+@import './mq/mediaqueries';

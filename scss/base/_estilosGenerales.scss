@@ -1,0 +1,25 @@
+a {
+    text-decoration: none;
+}
+
+.bigText {
+    font-size: map-get($text-sizes, big-text);
+}
+
+.smallText {
+    font-size: map-get($text-sizes, small-text);
+    padding: $text-small-padding;
+}
+
+.pinkText {
+    color: $color-pink;
+}
+
+.whiteText {
+    color: $color-white;
+}
+
+.textSytle {
+    font-weight: map-get($text-style, bolder-text);
+    text-align: map-get($text-style, centered-text);
+}

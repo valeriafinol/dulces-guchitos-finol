@@ -24,14 +24,14 @@
     transform: translateX(-15%);
 }
 
-.li{
+li{
     display: inline-block;
     text-decoration: none;
     list-style-type: none;
     position: relative;
 } 
 
-.li::after{
+li::after{
     content:'';
     width: 100%;
     height: 1px;
@@ -45,11 +45,11 @@
     transition: 0.25s ease;
 }
 
-.li:hover::after{
+li:hover::after{
     transform: scaleX(1.01);
 } 
 
-.a{
+a{
     text-decoration: none;
 } 
 

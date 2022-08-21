@@ -1,9 +1,6 @@
 /* Mobile */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-
+    .header {
         .navbar {
             .logoHeader {
                 max-width: 50%;
@@ -12,40 +9,28 @@
 
             .navbar-nav {
                 transform: translateX(0%) !important;
-                flex-direction: column;
-                align-items: center;
+                @include flex-column-center;
             }
         }
     }
 
     .smallText {
         font-size: 25px;
-        padding: 2% 0;
     }
 
     .bigText {
         font-size: 50px;
-        text-align: center;
     }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-
+    .header {
         .navbar {
-
             .navbar-nav {
                 transform: translateX(0%) !important;
+                @include flex-column-center;
             }
-
-        }
-
-        ul {
-            flex-direction: column;
-            align-items: center;
         }
     }
 }

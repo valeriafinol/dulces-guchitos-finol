@@ -67,7 +67,6 @@ a {
     margin: 4% 0; }
 
 .styleButton {
-  text-decoration: none;
   border-radius: 8px;
   border: 2px solid #ff7fb1;
   background-color: transparent;
@@ -105,10 +104,7 @@ a {
   .recetas .paragrahAndButton2 {
     padding: 1% 2%; }
 
-.paragrahAndButton2 {
-  padding: 1% 2%; }
-
-.contacto {
+.contactoInicio {
   background-color: #EAF6F6; }
 
 .footer {
@@ -119,10 +115,12 @@ a {
     color: #EAF6F6; }
   .footer .h6Footer {
     font-weight: bolder; }
-  .footer .icons {
-    color: white;
+  .footer .iconInstagram, .footer .iconWhatsapp {
+    color: pink;
     font-size: 25px;
     padding: 10px 5px; }
+  .footer .iconWhatsapp {
+    color: green; }
   .footer .copy {
     border-top: black dotted 1px;
     padding-top: 1%;
@@ -130,30 +128,21 @@ a {
 
 /* Mobile */
 @media screen and (min-width: 320px) and (max-width: 480px) {
-  header {
+  .header .navbar .logoHeader {
+    max-width: 50%;
+    margin: 3% 0; }
+  .header .navbar .navbar-nav {
+    transform: translateX(0%) !important;
     flex-direction: column;
     align-items: center; }
-    header .navbar .logoHeader {
-      max-width: 50%;
-      margin: 3% 0; }
-    header .navbar .navbar-nav {
-      transform: translateX(0%) !important;
-      flex-direction: column;
-      align-items: center; }
   .smallText {
-    font-size: 25px;
-    padding: 2% 0; }
+    font-size: 25px; }
   .bigText {
-    font-size: 50px;
-    text-align: center; } }
+    font-size: 50px; } }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  header {
+  .header .navbar .navbar-nav {
+    transform: translateX(0%) !important;
     flex-direction: column;
-    align-items: center; }
-    header .navbar .navbar-nav {
-      transform: translateX(0%) !important; }
-    header ul {
-      flex-direction: column;
-      align-items: center; } }
+    align-items: center; } }

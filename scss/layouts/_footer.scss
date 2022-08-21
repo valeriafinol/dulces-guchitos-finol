@@ -10,13 +10,18 @@
     }
 
     .h6Footer{
-        font-weight: $text-bolder;
+        font-weight: map-get($text-style, bolder-text);
     }
 
-    .icons {
-        color: $color-white;
+    .iconInstagram {
+        color: pink;
         font-size: 25px;
         padding: 10px 5px;
+    }
+
+    .iconWhatsapp {
+        @extend .iconInstagram;
+        color: green;
     }
 
     .copy {
