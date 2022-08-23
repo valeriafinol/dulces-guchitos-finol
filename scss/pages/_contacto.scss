@@ -1,3 +1,50 @@
 .formSection {
     background-color: $color-lightblue;
+
+    .styleButton {
+        border-radius: 8px;
+        border: 2px solid $color-pink;
+        background-color: transparent;
+        position: relative;
+        z-index: 5;
+        transition: 1s all ease;
+
+        &::before {
+            background: $color-pink;
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            transition: all 0.6s ease;
+            width: 0%;
+            height: 100%;
+        }
+
+        &:hover::before {
+            width: 100%;
+        }
+    }
+
+    .formButton {
+        margin: 4% 33%;
+        padding: 2% 15%;
+    }
+}
+
+.infoDeContactoText {
+    padding-left: 5%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    font-size: 18px;
+}
+
+.redesText {
+    padding-top: 5%;
+}
+
+.iconsSize {
+    font-size: 25px;
+    padding: 10px 5px;
 }

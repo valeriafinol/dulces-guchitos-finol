@@ -12,12 +12,12 @@
             integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
             crossorigin="anonymous"
         />
-        <link rel="stylesheet" href="../css/estilos2.css">
+        <link rel="stylesheet" href="../css/estilos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <script src="https://kit.fontawesome.com/5a26ebec28.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
+        <header class="header">
             <nav class="navbar navbar-expand-lg"> 
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button"
@@ -64,7 +64,7 @@
         </header>
             <main>
                 <div>
-                    <h2 class="pinkHeading centered smallTitle1 bolderText animate__animated animate__headShake">CONTÁCTANOS</h2>
+                    <h2 class="pinkText smallText textStyle animate__animated animate__headShake">CONTÁCTANOS</h2>
                 </div>
                 <section class="formSection">
                     <div class="container py-5">
@@ -74,27 +74,27 @@
                             </div>
                             <div class="col-md-6 col-12">
                                 <div>
-                                    <h3 class="pinkHeading centered smallTitle1 bolderText">Deja tu mensaje</h3>
+                                    <h3 class="pinkText smallText textStyle">Deja tu mensaje</h3>
                                 </div>
                                 <form>
                                     <div class="row d-flex">
                                         <div class="mb-3 col-md-6 col-12">
-                                            <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <label for="nombre" class="form-label">Nombre</label>
+                                            <input type="email" class="form-control" id="nombre" aria-describedby="nombre">
                                         </div>
                                         <div class="mb-3 col-md-6 col-12">
-                                            <label for="exampleInputPassword1" class="form-label">Apellido</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1">
+                                            <label for="apellido" class="form-label">Apellido</label>
+                                            <input type="text" class="form-control" id="apellido">
                                         </div>
                                     </div>
                                     <div class="row d-flex">
                                         <div class="mb-3 col-md-6 col-12">
-                                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email" aria-describedby="email">
                                         </div>
                                         <div class="mb-3 col-md-6 col-12">
-                                            <label for="exampleInputPassword1" class="form-label">Teléfono</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1">
+                                            <label for="telefono" class="form-label">Teléfono</label>
+                                            <input type="text" class="form-control" id="telefono">
                                         </div>
                                     </div>
                                     <div class="row d-flex">
@@ -117,30 +117,35 @@
                     <div class="container">
                         <div class="py-2">
                             <div class="row">
-                                <h2 class="bolderText centered pinkHeading smallTitle1">ENCUÉNTRANOS</h2>
+                                <h2 class="pinkText textStyle smallText">ENCUÉNTRANOS</h2>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 col-12">
                                     <div>
-                                        <h3 class="bolderText centered pinkHeading smallTitle1 d-none d-lg-block d-xl-block">Información de contacto</h3>
-                                        <h5 class="bolderText centered pinkHeading d-block d-lg-none">Información de contacto</h3>
-                                        <div class="iconsContacto d-flex">
+                                        <h3 class="pinkText textStyle smallText d-none d-lg-block d-xl-block">Información de contacto</h3>
+                                        <h5 class="pinkText textStyle d-block d-lg-none">Información de contacto</h3>
+                                        <div class="d-flex">
                                             <i class="fa-solid fa-phone infoDeContactoText"></i>
                                             <h4 class="infoDeContactoText">+54 9 11 1234-5678</h4>
                                         </div>
-                                        <div class="iconsContacto d-flex">
+                                        <div class="d-flex">
                                             <i class="fa-solid fa-envelope infoDeContactoText"></i>
                                             <h4 class="infoDeContactoText">dulcesguchitos@gmail.com</h4>
                                         </div>
-                                        <div class="iconsContacto d-flex">
+                                        <div class="d-flex">
                                             <i class="fa-solid fa-location-dot infoDeContactoText"></i>
-                                            <h4 class="infoDeContactoText infoDeContactoText">Av. 14A, Calle 69A-70. Maracaibo, Venezuela</h4>
+                                            <h4 class="infoDeContactoText">Av. 14A, Calle 69A-70. Maracaibo, Venezuela</h4>
                                         </div>
                                         <div>
-                                            <h4 class="bolderText redesText centered">Redes sociales</h4>
+                                            <h4 class="textStyle redesText">Redes sociales</h4>
                                             <div class="d-flex justify-content-center">
-                                                <i class="fa-brands fa-whatsapp iconsSize"></i>
-                                                <i class="fa-brands fa-instagram iconsSize"></i>
+                                                <a href="https://api.whatsapp.com/send?phone=541112345678&text=Hola,%20quiero%20un%20Guchito!" 
+                                                    target="_blank">    
+                                                    <i class="fa-brands fa-whatsapp iconsSize"></i>
+                                                </a>
+                                                <a href="https://www.instagram.com/dulcesguchitos" target="_blank">
+                                                    <i class="fa-brands fa-instagram iconsSize"></i>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -153,7 +158,7 @@
                     </div>
                 </section>
             </main>
-            <footer>
+            <footer class="footer">
                 <div class="py-1">
                     <div class="container-fluid pt-5 pb-4">
                         <div class="row">
@@ -162,24 +167,24 @@
                             </div>
                             <div class="col-md-2">
                                 <div>
-                                    <h6 class="lighBlueText bolderText mb-0 ">
+                                    <h6 class="h6Footer mb-0 ">
                                         Horarios
                                     </h6>
                                 </div>
                                 <div>
-                                    <p class="lighBlueText">
+                                    <p class="pFooter">
                                         Lunes a Viernes: <br> 9:00am-6pm
                                     </p>
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div>
-                                    <h6 class="lighBlueText bolderText mb-0 ">
+                                    <h6 class="h6Footer mb-0 ">
                                         Dirección
                                     </h6>
                                 </div>
                                 <div>
-                                    <p class="lighBlueText">
+                                    <p class="pFooter">
                                         Av. 14A, Calle 69A-70. 
                                         Maracaibo, Venezuela
                                     </p>
@@ -187,22 +192,22 @@
                             </div>
                             <!-- Nuestras Redes solo para mobile -->
                             <div class="col-md-2 d-block d-md-none mb-1">
-                                <h6 class="lighBlueText bolderText mb-0">
+                                <h6 class="h6Footer mb-0">
                                     Nuestras Redes
                                 </h6>
                                 <div>
                                     <a href="https://api.whatsapp.com/send?phone=541112345678&text=Hola,%20quiero%20un%20Guchito!" 
                                         target="_blank">    
-                                        <i class="fa-brands fa-whatsapp whiteText iconsSize animate__animated animate__pulse"></i>
+                                        <i class="fa-brands fa-whatsapp"></i>
                                     </a>
                                     <a href="https://www.instagram.com/dulcesguchitos" target="_blank">
-                                        <i class="fa-brands fa-instagram whiteText iconsSize animate__animated animate__pulse"></i>
+                                        <i class="fa-brands fa-instagram"></i>
                                     </a>
                                 </div>
                             </div>
                             <div class="col-md-4 mb-3">
                                 <form>
-                                    <h6 class="lighBlueText bolderText mb-1">
+                                    <h6 class="h6Footer mb-1">
                                         Suscríbete al Newsletter
                                     </h6>
                                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
@@ -214,16 +219,16 @@
                             </div>
                             <!-- Nuestras Redes solo para desktop -->
                             <div class="col-md-2 d-none d-md-block">
-                                <h6 class="lighBlueText bolderText mb-0">
+                                <h6 class="h6Footer mb-0">
                                     Nuestras Redes
                                 </h6>
                                 <div>
                                     <a href="https://api.whatsapp.com/send?phone=541112345678&text=Hola,%20quiero%20un%20Guchito!" 
                                         target="_blank">    
-                                        <i class="fa-brands fa-whatsapp whiteText iconsSize animate__animated animate__pulse"></i>
+                                        <i class="fa-brands fa-whatsapp iconWhatsapp"></i>
                                     </a>
                                     <a href="https://www.instagram.com/dulcesguchitos" target="_blank">
-                                        <i class="fa-brands fa-instagram whiteText iconsSize animate__animated animate__pulse"></i>
+                                        <i class="fa-brands fa-instagram iconInstagram"></i>
                                     </a>
                                 </div>
                             </div>

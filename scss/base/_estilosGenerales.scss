@@ -19,7 +19,7 @@ a {
     color: $color-white;
 }
 
-.textSytle {
+.textStyle {
     font-weight: map-get($text-style, bolder-text);
     text-align: map-get($text-style, centered-text);
 }
