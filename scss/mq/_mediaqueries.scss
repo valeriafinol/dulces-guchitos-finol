@@ -1,5 +1,6 @@
 /* Mobile */
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    // Header
     .header {
         .navbar {
             .logoHeader {
@@ -15,6 +16,7 @@
         }
     }
 
+    // Texto
     .smallText {
         font-size: 25px;
     }
@@ -23,15 +25,19 @@
         font-size: 50px;
     }
 
-    .recetas {
-        background-image: url(../images/croissant-960.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+    .cardText {
+        font-size: 20px;
+    }
+
+    // Contacto
+    .mapSize{
+        width: 100%;
     }
 }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    // Header
     .header {
         .navbar {
             .navbar-nav {
@@ -39,5 +45,10 @@
                 @include flex-column-center;
             }
         }
+    }
+
+    // Contacto
+    .mapSize{
+        width: 100%;
     }
 }

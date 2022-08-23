@@ -18,6 +18,9 @@ a {
   font-size: 30px;
   padding: 2% 0; }
 
+.cardText {
+  font-size: 22px; }
+
 .pinkText {
   color: #ff7fb1; }
 
@@ -107,10 +110,6 @@ a {
 .contactoInicio {
   background-color: #EAF6F6; }
 
-.paddingParagraph {
-  padding-top: 1%;
-  padding-bottom: 3%; }
-
 .formSection {
   background-color: #EAF6F6; }
   .formSection .styleButton {
@@ -150,13 +149,17 @@ a {
   font-size: 25px;
   padding: 10px 5px; }
 
+.mapSize {
+  width: 110%; }
+
 .footer {
   background-color: #3a3b3c; }
   .footer .logoFooter {
     width: 150px; }
-  .footer .pFooter, .footer .h6Footer {
+  .footer .pFooter, .footer .h4Footer {
     color: #EAF6F6; }
-  .footer .h6Footer {
+  .footer .h4Footer {
+    font-size: 16px;
     font-weight: bolder; }
   .footer .iconInstagram, .footer .iconWhatsapp {
     color: pink;
@@ -183,14 +186,16 @@ a {
     font-size: 25px; }
   .bigText {
     font-size: 50px; }
-  .recetas {
-    background-image: url(../images/croissant-960.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; } }
+  .cardText {
+    font-size: 20px; }
+  .mapSize {
+    width: 100%; } }
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .header .navbar .navbar-nav {
     transform: translateX(0%) !important;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .mapSize {
+    width: 100%; } }
