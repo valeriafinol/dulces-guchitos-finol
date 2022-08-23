@@ -4,6 +4,7 @@
         .navbar {
             .logoHeader {
                 max-width: 50%;
+                width: 180px;
                 margin: 3% 0;
             }
 
@@ -20,6 +21,12 @@
 
     .bigText {
         font-size: 50px;
+    }
+
+    .recetas {
+        background-image: url(../images/croissant.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
