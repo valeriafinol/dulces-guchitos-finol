@@ -2,7 +2,7 @@
     background-color: $color-lightblue;
 
     .styleButton {
-        border-radius: 8px;
+        border-radius: $border-radius-8;
         border: 2px solid $color-pink;
         background-color: transparent;
         position: relative;

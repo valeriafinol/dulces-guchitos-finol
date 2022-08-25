@@ -13,3 +13,8 @@
     opacity: 1;
     transition: all 1.5s ease;
 }
+
+@mixin image-mq {
+    height: auto;
+    width: auto;
+}

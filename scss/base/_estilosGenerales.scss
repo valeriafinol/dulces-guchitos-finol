@@ -15,7 +15,7 @@ a {
 .smallTitlePages {
     @extend .smallText;
     font-size: 32px;
-    padding: 0; 
+    padding: 0;
 }
 
 .cardText {
@@ -37,5 +37,11 @@ a {
 
 .pagesParagraph {
     text-align: map-get($text-style, centered-text);
-    padding: 2% 0; 
+    padding: 1% 0;
+}
+
+// Imagenes
+.imagesSize {
+    height: 600px;
+    width: 500px;
 }
