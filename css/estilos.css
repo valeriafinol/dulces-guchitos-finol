@@ -14,9 +14,13 @@ a {
 .bigText {
   font-size: 80px; }
 
-.smallText {
+.smallText, .smallTitlePages {
   font-size: 30px;
   padding: 2% 0; }
+
+.smallTitlePages {
+  font-size: 32px;
+  padding: 0; }
 
 .cardText {
   font-size: 22px; }
@@ -30,6 +34,10 @@ a {
 .textStyle {
   font-weight: bolder;
   text-align: center; }
+
+.pagesParagraph {
+  text-align: center;
+  padding: 2% 0; }
 
 .header {
   background-color: white; }
@@ -110,6 +118,56 @@ a {
 .contactoInicio {
   background-color: #EAF6F6; }
 
+.flipCard {
+  display: inline-block;
+  text-align: center;
+  overflow: hidden; }
+  .flipCard .imgCard {
+    transition: all .5s ease; }
+  .flipCard .productosAndRecetasImages {
+    width: 90%;
+    margin-bottom: 15%; }
+  .flipCard .flipCardImage {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; }
+    .flipCard .flipCardImage .flipCardText {
+      color: black;
+      font-size: 1.4em;
+      z-index: 5;
+      opacity: 0;
+      transition: all .5s ease;
+      position: absolute; }
+    .flipCard .flipCardImage:active .imgCard {
+      opacity: 0.6;
+      filter: blur(5px);
+      transform: scale(1.15); }
+    .flipCard .flipCardImage:active .flipCardText {
+      opacity: 1;
+      transition: all 1.5s ease; }
+    .flipCard .flipCardImage:hover .imgCard {
+      opacity: 0.6;
+      filter: blur(5px);
+      transform: scale(1.15); }
+    .flipCard .flipCardImage:hover .flipCardText {
+      opacity: 1;
+      transition: all 1.5s ease; }
+
+.historiaSection {
+  background-color: #FBF8F1; }
+
+.cardStyle {
+  filter: drop-shadow(5px 5px 5px #cecece); }
+  .cardStyle .cardTextNosotros {
+    margin-top: 5%;
+    margin-bottom: 2%; }
+
+.carousel-inner .carousel-item {
+  transition: -webkit-transform .6s ease;
+  transition: transform .6s ease;
+  transition: transform .6s ease, -webkit-transform .6s ease; }
+
 .formSection {
   background-color: #EAF6F6; }
   .formSection .styleButton {
@@ -182,12 +240,15 @@ a {
     transform: translateX(0%) !important;
     flex-direction: column;
     align-items: center; }
-  .smallText {
+  .smallText, .smallTitlePages {
     font-size: 25px; }
   .bigText {
     font-size: 50px; }
   .cardText {
     font-size: 20px; }
+  .pagesParagraph {
+    padding: 2% 5%;
+    max-width: 100%; }
   .mapSize {
     width: 100%; } }
 

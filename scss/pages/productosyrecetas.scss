@@ -1,0 +1,50 @@
+.flipCard {
+    display: inline-block;
+    text-align: center; 
+    overflow: hidden;
+    
+    .imgCard {
+        transition: all .5s ease;
+    }
+
+    .productosAndRecetasImages {
+        width: 90%;
+        margin-bottom: 15%;
+    }
+
+    .flipCardImage {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+
+        .flipCardText{
+            color: black;
+            font-size: 1.4em;
+            z-index: 5;
+            opacity: 0;
+            transition: all .5s ease;
+            position: absolute;
+        }
+
+        &:active {
+            .imgCard {
+                @include flip-card-image; 
+            }   
+            
+            .flipCardText {
+                @include flip-card-text;
+            }
+        }
+
+        &:hover {
+            .imgCard {
+                @include flip-card-image; 
+            }    
+
+            .flipCardText {
+                @include flip-card-text;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.historiaSection {
+    background-color: $color-beige;
+}
+
+.cardStyle {
+    filter: drop-shadow(5px 5px 5px #cecece);
+
+    .cardTextNosotros {
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+}
+
+.carousel-inner {
+    .carousel-item {
+        transition: -webkit-transform .6s ease;
+        transition: transform .6s ease;
+        transition: transform .6s ease, -webkit-transform .6s ease;
+    }
+}

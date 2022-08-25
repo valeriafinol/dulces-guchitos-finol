@@ -2,6 +2,7 @@ a {
     text-decoration: none;
 }
 
+// Texto
 .bigText {
     font-size: map-get($text-sizes, big-text);
 }
@@ -9,6 +10,12 @@ a {
 .smallText {
     font-size: map-get($text-sizes, small-text);
     padding: $text-small-padding;
+}
+
+.smallTitlePages {
+    @extend .smallText;
+    font-size: 32px;
+    padding: 0; 
 }
 
 .cardText {
@@ -26,4 +33,9 @@ a {
 .textStyle {
     font-weight: map-get($text-style, bolder-text);
     text-align: map-get($text-style, centered-text);
+}
+
+.pagesParagraph {
+    text-align: map-get($text-style, centered-text);
+    padding: 2% 0; 
 }

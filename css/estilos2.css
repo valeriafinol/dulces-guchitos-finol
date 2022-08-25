@@ -200,7 +200,7 @@ footer{
 }
 
 /* PRODUCTOS Y RECETAS */
-.productosAndRecetasImages{
+/* .productosAndRecetasImages{
     width: 90%;
     margin-bottom: 15%;
 }
@@ -211,7 +211,7 @@ footer{
     overflow: hidden;
 }
 
-.flipCard img{
+.flipCard .imgCard {
     transition: all .5s ease;
 }
 
@@ -240,19 +240,19 @@ footer{
 .flipCardImage:active .flipCardText, .flipCardImage:hover .flipCardText{
     opacity: 1;
     transition: all 1.5s ease;
-}
+} */
 
-/* NOSOTROS */
+/* NOSOTROS
 .carousel-inner .carousel-item {
     transition: -webkit-transform .6s ease;
     transition: transform .6s ease;
     transition: transform .6s ease, -webkit-transform .6s ease;
-}
+} */
 
-.headingCardNosotros{
+/* .headingCardNosotros{
     margin-top: 5%;
     margin-bottom: 2%;
-} 
+}  */
 
 /* CONTACTO */
 .formButton{
@@ -307,7 +307,7 @@ footer{
     }
 
     /* PRODUCTOS Y RECETAS */
-    .smallTitle2{
+    .pProductosAndRecetas{
         margin-top: 8%;
     }
 
