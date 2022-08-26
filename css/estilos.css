@@ -113,7 +113,7 @@ a {
   padding: 2% 4%; }
 
 .recetas {
-  background-image: url(../images/croissant.jpg);
+  background-image: url(../images/croissant-1920.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
   .recetas .paragrahAndButton2 {
@@ -253,6 +253,8 @@ a {
   .pagesParagraph {
     padding: 2% 5%;
     max-width: 100%; }
+  .recetas {
+    background-image: url(../images/croissant-1500.jpg); }
   .mapSize {
     width: 100%; }
   .imagesSize {
@@ -269,6 +271,8 @@ a {
     align-items: center; }
   .cardText {
     font-size: 20px; }
+  .recetas {
+    background-image: url(../images/croissant-1500.jpg); }
   .mapSize {
     width: 100%; }
   .imagesSize {
