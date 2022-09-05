@@ -1,8 +1,8 @@
 .flipCard {
     display: inline-block;
-    text-align: center; 
+    text-align: center;
     overflow: hidden;
-    
+
     .imgCard {
         transition: all .5s ease;
     }
@@ -18,8 +18,8 @@
         display: flex;
         justify-content: center;
 
-        .flipCardText{
-            color: $color-white; 
+        .flipCardText {
+            color: $color-white;
             font-size: 1.4em;
             z-index: 5;
             opacity: 0;
@@ -29,9 +29,9 @@
 
         &:active {
             .imgCard {
-                @include flip-card-image; 
-            }   
-            
+                @include flip-card-image;
+            }
+
             .flipCardText {
                 @include flip-card-text;
             }
@@ -39,8 +39,8 @@
 
         &:hover {
             .imgCard {
-                @include flip-card-image; 
-            }    
+                @include flip-card-image;
+            }
 
             .flipCardText {
                 @include flip-card-text;

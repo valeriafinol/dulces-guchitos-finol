@@ -21,7 +21,7 @@
         <script src="https://kit.fontawesome.com/5a26ebec28.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="headerStyle sticky-top">
+        <header class="headerStyle sticky-xl-top">
             <nav class="navbar navbar-expand-lg"> 
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button"
@@ -66,195 +66,194 @@
                 </div>
             </nav>
         </header>
-            <main>
-                <div>
-                    <h2 class="pinkText smallText textStyle animate__animated animate__headShake">CONTÁCTANOS</h2>
-                </div>
-                <section class="formSection">
-                    <div class="container py-4">
-                        <div class="row d-flex justify-content-center">
-                            <div class="col-md-6 col-12 d-flex flex-column justify-content-center">
-                                <img srcset="../images/pan4-500.jpg 320w,
-                                            ../images/pan4-790.jpg 790w,    
-                                            ../images/pan4-1048.jpg 1048w" 
-                                    sizes="(max-width: 320px) 500px,
-                                            (max-width: 768px) 790px,
-                                            1048px"
-                                    src="../images/pan4-1048.jpg" 
-                                    loading="lazy" 
-                                    alt="Pan redondo con ajonjolí" 
-                                    class="pb-3 img-fluid imagesSize">
+        <main>
+            <div>
+                <h2 class="pinkText smallText textStyle animate__animated animate__headShake">CONTÁCTANOS</h2>
+            </div>
+            <section class="formSection">
+                <div class="container py-4">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-6 col-12 d-flex flex-column justify-content-center">
+                            <img srcset="../images/pan4-500.jpg 320w,
+                                        ../images/pan4-790.jpg 790w,    
+                                        ../images/pan4-1048.jpg 1048w" 
+                                sizes="(max-width: 320px) 500px,
+                                        (max-width: 768px) 790px,
+                                        1048px"
+                                src="../images/pan4-1048.jpg" 
+                                loading="lazy" 
+                                alt="Pan redondo con ajonjolí" 
+                                class="pb-3 img-fluid imagesSize">
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div>
+                                <h3 class="pinkText smallText textStyle">Déjanos tu mensaje</h3>
                             </div>
+                            <form> 
+                                <div class="row d-flex">
+                                    <div class="mb-3 col-md-6 col-12">
+                                        <label for="nombre" class="form-label">Nombre</label>
+                                        <input type="text" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Jane" required>
+                                    </div>
+                                    <div class="mb-3 col-md-6 col-12">
+                                        <label for="apellido" class="form-label">Apellido</label>
+                                        <input type="text" class="form-control" id="apellido" placeholder="Doe"required>
+                                    </div>
+                                </div>
+                                <div class="row d-flex">
+                                    <div class="mb-3 col-md-6 col-12">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="ejemplo@gmail.com" required>
+                                    </div>
+                                    <div class="mb-3 col-md-6 col-12">
+                                        <label for="telefono" class="form-label">Teléfono</label>
+                                        <input type="text" class="form-control" id="telefono" placeholder="+54 9 11 1234-5678" required>
+                                    </div>
+                                </div>
+                                <div class="row d-flex">
+                                    <div class="col-12">
+                                        <label for="mensaje">Mensaje</label>
+                                        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deja tu mensaje, comentarios o sugerencias" class="form-control" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex justify-content-center">
+                                        <button type="submit" class="mt-3 px-5 styleButton formButton">Enviar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="py-2">
+                        <div class="row">
+                            <h2 class="pinkText textStyle smallText">ENCUÉNTRANOS</h2>
+                        </div>
+                        <div class="row">
                             <div class="col-md-6 col-12">
                                 <div>
-                                    <h3 class="pinkText smallText textStyle">Déjanos tu mensaje</h3>
-                                </div>
-                                <form> 
-                                    <div class="row d-flex">
-                                        <div class="mb-3 col-md-6 col-12">
-                                            <label for="nombre" class="form-label">Nombre</label>
-                                            <input type="text" class="form-control" id="nombre" aria-describedby="nombre" placeholder="Jane" required>
-                                        </div>
-                                        <div class="mb-3 col-md-6 col-12">
-                                            <label for="apellido" class="form-label">Apellido</label>
-                                            <input type="text" class="form-control" id="apellido" placeholder="Doe"required>
-                                        </div>
+                                    <h3 class="pinkText textStyle smallText d-none d-lg-block d-xl-block">Información de contacto</h3>
+                                    <h3 class="pinkText textStyle d-block d-lg-none">Información de contacto</h3>
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-phone infoDeContactoText"></i>
+                                        <h4 class="infoDeContactoText">+54 9 11 1234-5678</h4>
                                     </div>
-                                    <div class="row d-flex">
-                                        <div class="mb-3 col-md-6 col-12">
-                                            <label for="email" class="form-label">Email</label>
-                                            <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="ejemplo@gmail.com" required>
-                                        </div>
-                                        <div class="mb-3 col-md-6 col-12">
-                                            <label for="telefono" class="form-label">Teléfono</label>
-                                            <input type="text" class="form-control" id="telefono" placeholder="+54 9 11 1234-5678" required>
-                                        </div>
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-envelope infoDeContactoText"></i>
+                                        <h4 class="infoDeContactoText">dulcesguchitos@gmail.com</h4>
                                     </div>
-                                    <div class="row d-flex">
-                                        <div class="col-12">
-                                            <label for="mensaje">Mensaje</label>
-                                            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deja tu mensaje, comentarios o sugerencias" class="form-control" required></textarea>
-                                        </div>
+                                    <div class="d-flex">
+                                        <i class="fa-solid fa-location-dot infoDeContactoText"></i>
+                                        <h4 class="infoDeContactoText">Av. 14A, Calle 69A-70. Maracaibo, Venezuela</h4>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12 d-flex justify-content-center">
-                                            <button type="submit" class="mt-3 px-5 styleButton formButton">Enviar</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="container">
-                        <div class="py-2">
-                            <div class="row">
-                                <h2 class="pinkText textStyle smallText">ENCUÉNTRANOS</h2>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6 col-12">
                                     <div>
-                                        <h3 class="pinkText textStyle smallText d-none d-lg-block d-xl-block">Información de contacto</h3>
-                                        <h3 class="pinkText textStyle d-block d-lg-none">Información de contacto</h3>
-                                        <div class="d-flex">
-                                            <i class="fa-solid fa-phone infoDeContactoText"></i>
-                                            <h4 class="infoDeContactoText">+54 9 11 1234-5678</h4>
-                                        </div>
-                                        <div class="d-flex">
-                                            <i class="fa-solid fa-envelope infoDeContactoText"></i>
-                                            <h4 class="infoDeContactoText">dulcesguchitos@gmail.com</h4>
-                                        </div>
-                                        <div class="d-flex">
-                                            <i class="fa-solid fa-location-dot infoDeContactoText"></i>
-                                            <h4 class="infoDeContactoText">Av. 14A, Calle 69A-70. Maracaibo, Venezuela</h4>
-                                        </div>
-                                        <div>
-                                            <h4 class="textStyle redesText">Redes sociales</h4>
-                                            <div class="d-flex justify-content-center">
-                                                <a href="https://api.whatsapp.com/send?phone=541112345678&text=Hola,%20quiero%20un%20Guchito!" 
-                                                    target="_blank">    
-                                                    <i class="fa-brands fa-whatsapp iconsSize iconWhatsappContacto"></i>
-                                                </a>
-                                                <a href="https://www.instagram.com/dulcesguchitos" target="_blank">
-                                                    <i class="fa-brands fa-instagram iconsSize iconInstagramContacto"></i>
-                                                </a>
-                                            </div>
+                                        <h4 class="textStyle redesText">Redes sociales</h4>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://api.whatsapp.com/send?phone=541112345678&text=Hola,%20quiero%20un%20Guchito!" 
+                                                target="_blank">    
+                                                <i class="fa-brands fa-whatsapp iconsSize iconWhatsappContacto"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/dulcesguchitos" target="_blank">
+                                                <i class="fa-brands fa-instagram iconsSize iconInstagramContacto"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-12 mb-4">
-                                    <iframe class="mapSize py-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.8052912960275!2d-71.61905135581969!3d10.672216311320115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8998df92024373%3A0x7476b30856fa1502!2sAvenida%2014A%20%26%20Calle%2069A%2C%20Maracaibo%204002%2C%20Zulia%2C%20Venezuela!5e0!3m2!1sen!2sar!4v1662323948661!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
+                            </div>
+                            <div class="col-md-6 col-12 mb-4">
+                                <iframe class="mapSize py-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.8052912960275!2d-71.61905135581969!3d10.672216311320115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8998df92024373%3A0x7476b30856fa1502!2sAvenida%2014A%20%26%20Calle%2069A%2C%20Maracaibo%204002%2C%20Zulia%2C%20Venezuela!5e0!3m2!1sen!2sar!4v1662323948661!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
-                </section>
-            </main>
-            <footer class="footerStyle">
-                <div class="py-1">
-                    <div class="container-fluid pt-5 pb-4">
-                        <div class="row">
-                            <div class="col-md-2 col-12 d-md-block d-flex justify-content-center">
-                                <a href="../index.html">
-                                    <img src="../images/logo.png" loading="lazy" alt="Logo Dulces Guchitos" class="logoFooter img-fluid">
+                </div>
+            </section>
+        </main>
+        <footer class="footerStyle">
+            <div class="py-1">
+                <div class="container-fluid pt-5 pb-4">
+                    <div class="row">
+                        <div class="col-md-2 col-12 d-md-block d-flex justify-content-center">
+                            <a href="../index.html">
+                                <img src="../images/logo.png" loading="lazy" alt="Logo Dulces Guchitos" class="logoFooter img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <div>
+                                <h4 class="h4Footer mb-0 ">
+                                    Horarios
+                                </h4>
+                            </div>
+                            <div>
+                                <p class="pFooter">
+                                    Lunes a Viernes: <br> 9:00am-6pm
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div>
+                                <h4 class="h4Footer mb-0 ">
+                                    Dirección
+                                </h4>
+                            </div>
+                            <div>
+                                <p class="pFooter">
+                                    Av. 14A, Calle 69A-70. 
+                                    Maracaibo, Venezuela
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Nuestras Redes solo para mobile -->
+                        <div class="col-md-2 d-block d-md-none mb-1">
+                            <h4 class="h4Footer mb-0">
+                                Nuestras Redes
+                            </h4>
+                            <div>
+                                <a href="https://api.whatsapp.com/send?phone=541112345678&text=Hola,%20quiero%20un%20Guchito!" 
+                                    target="_blank">    
+                                    <i class="fa-brands fa-whatsapp iconWhatsapp"></i>
+                                </a>
+                                <a href="https://www.instagram.com/dulcesguchitos" target="_blank">
+                                    <i class="fa-brands fa-instagram iconInstagram"></i>
                                 </a>
                             </div>
-                            <div class="col-md-2">
-                                <div>
-                                    <h4 class="h4Footer mb-0 ">
-                                        Horarios
-                                    </h4>
-                                </div>
-                                <div>
-                                    <p class="pFooter">
-                                        Lunes a Viernes: <br> 9:00am-6pm
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div>
-                                    <h4 class="h4Footer mb-0 ">
-                                        Dirección
-                                    </h4>
-                                </div>
-                                <div>
-                                    <p class="pFooter">
-                                        Av. 14A, Calle 69A-70. 
-                                        Maracaibo, Venezuela
-                                    </p>
-                                </div>
-                            </div>
-                            <!-- Nuestras Redes solo para mobile -->
-                            <div class="col-md-2 d-block d-md-none mb-1">
-                                <h4 class="h4Footer mb-0">
-                                    Nuestras Redes
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <form>
+                                <h4 class="h4Footer mb-1">
+                                    Suscríbete al Newsletter
                                 </h4>
-                                <div>
-                                    <a href="https://api.whatsapp.com/send?phone=541112345678&text=Hola,%20quiero%20un%20Guchito!" 
-                                        target="_blank">    
-                                        <i class="fa-brands fa-whatsapp iconWhatsapp"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com/dulcesguchitos" target="_blank">
-                                        <i class="fa-brands fa-instagram iconInstagram"></i>
-                                    </a>
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                    <input id="newsletter" type="email" class="form-control" placeholder="ejemplo@gmail.com" required>
+                                    <button class="btn styleButton whiteText" type="submit">Suscríbete</button>
                                 </div>
-                            </div>
-                            <div class="col-md-4 mb-3">
-                                <form>
-                                    <h4 class="h4Footer mb-1">
-                                        Suscríbete al Newsletter
-                                    </h4>
-                                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                        <input id="newsletter" type="email" class="form-control" placeholder="ejemplo@gmail.com" required>
-                                        <button class="btn styleButton whiteText" type="submit">Suscríbete</button>
-                                    </div>
-                                </form>
-                            </div>
-                            <!-- Nuestras Redes solo para desktop -->
-                            <div class="col-md-2 d-none d-md-block">
-                                <h4 class="h4Footer mb-0">
-                                    Nuestras Redes
-                                </h4>
-                                <div>
-                                    <a href="https://api.whatsapp.com/send?phone=541112345678&text=Hola,%20quiero%20un%20Guchito!" 
-                                        target="_blank">    
-                                        <i class="fa-brands fa-whatsapp iconWhatsapp"></i>
-                                    </a>
-                                    <a href="https://www.instagram.com/dulcesguchitos" target="_blank">
-                                        <i class="fa-brands fa-instagram iconInstagram"></i>
-                                    </a>
-                                </div>
+                            </form>
+                        </div>
+                        <!-- Nuestras Redes solo para desktop -->
+                        <div class="col-md-2 d-none d-md-block">
+                            <h4 class="h4Footer mb-0">
+                                Nuestras Redes
+                            </h4>
+                            <div>
+                                <a href="https://api.whatsapp.com/send?phone=541112345678&text=Hola,%20quiero%20un%20Guchito!" 
+                                    target="_blank">    
+                                    <i class="fa-brands fa-whatsapp iconWhatsapp"></i>
+                                </a>
+                                <a href="https://www.instagram.com/dulcesguchitos" target="_blank">
+                                    <i class="fa-brands fa-instagram iconInstagram"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <p class="text-center text-muted copy">&copy; Valeria Finol - 2022</p>
                 </div>
-            </footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
-                integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
-                crossorigin="anonymous">
-            </script>
-        </div>
+                <p class="text-center text-muted copy">&copy; Valeria Finol - 2022</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" 
+            crossorigin="anonymous">
+        </script>
     </body>
 </html>
