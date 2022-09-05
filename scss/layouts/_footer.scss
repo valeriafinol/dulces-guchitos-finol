@@ -16,19 +16,23 @@
     }
 
     .iconInstagram {
-        color: pink;
-        animation-duration: infinite;
+        color: $color-babypink;
         font-size: 25px;
         padding: 10px 5px;
+
+        &:hover {
+            color: $color-lightblue;
+            transition: 300ms linear;
+        }
     }
 
     .iconWhatsapp {
         @extend .iconInstagram;
-        color: green;
+        color: $color-green;
     }
 
     .copy {
-        border-top: black dotted 1px;
+        border-top: $color-black dotted 1px;
         padding-top: 1%;
         margin-bottom: 0;
     }

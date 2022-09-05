@@ -18,3 +18,9 @@
     height: auto;
     width: auto;
 }
+
+@mixin fonts-error {
+    margin-top: $margin-error;
+    text-align: map-get($text-style, centered-text);
+    width: $width-height-100; 
+}

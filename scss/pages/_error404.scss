@@ -1,0 +1,37 @@
+.error {
+    height: 90vh;
+    background-color: $color-lightblue;
+
+    section {
+        h2 {
+            @include fonts-error;
+            color: $color-pink;
+            font-size: $font-size-error;
+        }
+
+        div {
+            position: relative;
+
+            h3 {
+                font-size: 9rem;
+                line-height: 1.5;
+                font-family: $font-error;
+                color: rgba($color-black, 0.3);
+            }
+        }
+
+        h3 {
+            @include fonts-error;
+            
+            a {
+                color: $color-black;
+                font-family: $font-error;
+
+                &:hover {
+                    color: $color-pink;
+                    transition: 300ms linear;
+                }
+            }
+        }
+    }
+}

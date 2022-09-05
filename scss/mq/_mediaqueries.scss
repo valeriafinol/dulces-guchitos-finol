@@ -1,5 +1,5 @@
 /* Mobile */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     // Header
     .headerStyle {
         .navbar {
@@ -31,7 +31,7 @@
 
     .pagesParagraph {
         padding: 2% 5%;
-        max-width: 100%;
+        max-width: $width-height-100;
     }
 
     // Index
@@ -41,7 +41,7 @@
     
     // Contacto
     .mapSize {
-        width: 100%;
+        width: $width-height-100;
     }
 
     // Nosotros y Contacto
@@ -78,7 +78,7 @@
 
     // Contacto
     .mapSize {
-        width: 100%;
+        width: $width-height-100;
     }
 
     // Nosotros y Contacto

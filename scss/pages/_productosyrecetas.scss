@@ -19,7 +19,7 @@
         justify-content: center;
 
         .flipCardText{
-            color: black;
+            color: $color-white; 
             font-size: 1.4em;
             z-index: 5;
             opacity: 0;

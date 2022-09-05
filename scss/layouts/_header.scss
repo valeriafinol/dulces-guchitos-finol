@@ -18,7 +18,7 @@
 
             &::after {
                 content: '';
-                width: 100%;
+                width: $width-height-100;
                 height: 1px;
                 background-color: $color-pink;
                 border-radius: 4px;
@@ -32,6 +32,10 @@
 
             &:hover::after {
                 transform: scaleX(1.01);
+            }
+
+            a {
+                color: $color-black;
             }
         }
     }
