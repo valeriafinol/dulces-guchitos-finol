@@ -14,10 +14,14 @@
         />
         <link rel="stylesheet" href="../css/estilos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+        <link rel="manifest" href="../images/site.webmanifest">
         <script src="https://kit.fontawesome.com/5a26ebec28.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="headerStyle">
+        <header class="headerStyle sticky-top">
             <nav class="navbar navbar-expand-lg"> 
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button"
@@ -264,9 +268,8 @@
                                     Suscríbete al Newsletter
                                 </h4>
                                 <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                    <label for="newsletter" class="visually-hidden">Email address</label>
-                                    <input id="newsletter" type="text" class="form-control" placeholder="ejemplo@gmail.com">
-                                    <button class="btn styleButton whiteText" type="button">Suscríbete</button>
+                                    <input id="newsletter" type="email" class="form-control" placeholder="ejemplo@gmail.com" required>
+                                    <button class="btn styleButton whiteText" type="submit">Suscríbete</button>
                                 </div>
                             </form>
                         </div>

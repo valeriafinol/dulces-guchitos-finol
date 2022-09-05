@@ -14,10 +14,14 @@
         />
         <link rel="stylesheet" href="../css/estilos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+        <link rel="manifest" href="../images/site.webmanifest">
         <script src="https://kit.fontawesome.com/5a26ebec28.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="headerStyle">
+        <header class="headerStyle sticky-top">
             <nav class="navbar navbar-expand-lg"> 
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button"
@@ -89,27 +93,27 @@
                                     <div class="row d-flex">
                                         <div class="mb-3 col-md-6 col-12">
                                             <label for="nombre" class="form-label">Nombre</label>
-                                            <input type="email" class="form-control" id="nombre" aria-describedby="nombre">
+                                            <input type="text" class="form-control" id="nombre" aria-describedby="nombre" required>
                                         </div>
                                         <div class="mb-3 col-md-6 col-12">
                                             <label for="apellido" class="form-label">Apellido</label>
-                                            <input type="text" class="form-control" id="apellido">
+                                            <input type="text" class="form-control" id="apellido" required>
                                         </div>
                                     </div>
                                     <div class="row d-flex">
                                         <div class="mb-3 col-md-6 col-12">
                                             <label for="email" class="form-label">Email</label>
-                                            <input type="email" class="form-control" id="email" aria-describedby="email">
+                                            <input type="email" class="form-control" id="email" aria-describedby="email" required>
                                         </div>
                                         <div class="mb-3 col-md-6 col-12">
                                             <label for="telefono" class="form-label">Teléfono</label>
-                                            <input type="text" class="form-control" id="telefono">
+                                            <input type="text" class="form-control" id="telefono" required>
                                         </div>
                                     </div>
                                     <div class="row d-flex">
                                         <div class="col-12">
                                             <label for="mensaje">Mensaje</label>
-                                            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deja tu mensaje, comentarios o sugerencias" class="form-control"></textarea>
+                                            <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deja tu mensaje, comentarios o sugerencias" class="form-control" required></textarea>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -160,7 +164,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mb-4">
-                                    <iframe class="mapSize py-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.8412789666327!2d-71.6158267!3d10.6694253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8998e755a6f4e1%3A0xc39fcd48eb5da18b!2sCalle%2072%2C%20Maracaibo%204002%2C%20Zulia%2C%20Venezuela!5e0!3m2!1sen!2sar!4v1658177928647!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe class="mapSize py-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.8052912960275!2d-71.61905135581969!3d10.672216311320115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8998df92024373%3A0x7476b30856fa1502!2sAvenida%2014A%20%26%20Calle%2069A%2C%20Maracaibo%204002%2C%20Zulia%2C%20Venezuela!5e0!3m2!1sen!2sar!4v1662323948661!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>
                         </div>
@@ -220,9 +224,8 @@
                                         Suscríbete al Newsletter
                                     </h4>
                                     <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                        <label for="newsletter" class="visually-hidden">Email address</label>
-                                        <input id="newsletter" type="text" class="form-control" placeholder="ejemplo@gmail.com">
-                                        <button class="btn styleButton whiteText" type="button">Suscríbete</button>
+                                        <input id="newsletter" type="email" class="form-control" placeholder="ejemplo@gmail.com" required>
+                                        <button class="btn styleButton whiteText" type="submit">Suscríbete</button>
                                     </div>
                                 </form>
                             </div>

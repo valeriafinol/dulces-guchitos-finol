@@ -78,8 +78,9 @@ a {
   .cardStyle .cardText {
     text-align: center; }
   .cardStyle .cardButton {
-    padding: 2% 10%;
-    margin: 4% 0; }
+    padding: 8% 15%;
+    margin: 13% 0;
+    width: 105px; }
 
 .styleButton {
   border-radius: 8px;
@@ -110,14 +111,16 @@ a {
 
 .paragrahAndButton {
   margin: 2% 0;
-  padding: 2% 4%; }
+  padding: 8% 4%;
+  width: 120px; }
 
 .recetas {
   background-image: url(../images/croissant-1920.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
   .recetas .paragrahAndButton2 {
-    padding: 1% 2%; }
+    padding: 10% 2%;
+    width: 120px; }
 
 .contactoInicio {
   background-color: #EAF6F6; }
@@ -225,6 +228,7 @@ a {
     font-weight: bolder; }
   .footerStyle .iconInstagram, .footerStyle .iconWhatsapp {
     color: pink;
+    animation-duration: infinite;
     font-size: 25px;
     padding: 10px 5px; }
   .footerStyle .iconWhatsapp {
